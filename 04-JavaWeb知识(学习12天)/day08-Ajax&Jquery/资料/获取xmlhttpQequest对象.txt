@@ -1,0 +1,59 @@
+//创建一个XMLHttpRequest对象 ,利用此对象与服务器进行通信 是AJAX技术的核心
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function ajaxFunction(){
+   var xmlHttp;
+   try{ // Firefox, Opera 8.0+, Safari
+        xmlHttp=new XMLHttpRequest();
+    }
+    catch (e){
+	   try{// Internet Explorer
+	         xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+	      }
+	    catch (e){
+	      try{
+	         xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+	      }
+	      catch (e){}
+	      }
+    }
+
+	return xmlHttp;
+ }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function getXMLHttpRequest(){
+	 var xmlHttpReq=null; 
+	 if (window.ActiveXObject) {//IE浏览器创建XMLHttpRequest对象
+	 	xmlHttpReq = new ActiveXObject("MSXML2.XMLHTTP.3.0");
+	 }else if(window.XMLHttpRequest){
+	 	 xmlHttpReq = new XMLHttpRequest();
+	 }
+     return xmlHttpReq;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * 获取XmlHttpRequest对象
+ */
+function getXMLHttpRequest() {
+	var xmlHttpReq=null;
+	if (window.XMLHttpRequest) {//Mozilla 浏览器
+		xmlHttpReq = new XMLHttpRequest();
+	}else {
+		if (window.ActiveXObject) {//IE 浏览器
+			try {
+				xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			catch (e) {
+				try {//IE 浏览器
+					xmlHttpReq = new ActiveXObject("Msxml2.XMLHTTP");
+				}
+				catch (e) {
+				}
+			}
+		}
+	}
+	return xmlHttpReq;
+}
+
+ 

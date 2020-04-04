@@ -15,5 +15,7 @@
 [day08-Ajax&Jquery](https://github.com/hao297531173/javawebLearning/blob/master/04-JavaWeb%E7%9F%A5%E8%AF%86(%E5%AD%A6%E4%B9%A012%E5%A4%A9)/day08-Ajax%26Jquery/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.md)<br>
 [day09-Listener&Filter](https://github.com/hao297531173/javawebLearning/blob/master/04-JavaWeb%E7%9F%A5%E8%AF%86(%E5%AD%A6%E4%B9%A012%E5%A4%A9)/day09-Listener%26Filter/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.md)<br>
 
+springboot整合mybatis的demo.rar 是一个用springboot整合mybatis做的一个demo，具体介绍看我的博客 https://blog.csdn.net/haohulala/article/details/105312066
+
 ## 项目课件请按照文件夹名自取
 
